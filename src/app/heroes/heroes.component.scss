@@ -1,0 +1,84 @@
+/* HeroesComponent's private CSS styles */
+$tc1: var(--tc-1);
+$tc2: var(--tc-2);
+$bc1: var(--bc-1);
+$bc2: var(--bc-2);
+$bc3: var(--bc-3);
+$bc4: var(--bc-4);
+
+.heroes {
+
+  /* Variables Start */
+  --tc-1: #fff;
+  --tc-2: #2c3a41;
+  --bc-1: #eee;
+  --bc-2: #525252;
+  --bc-3: #000;
+  --bc-4: #405061;
+  /* Variables Finish */
+
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+
+  li {
+    display: flex;
+  }
+
+  button {
+    border: none;
+    flex: 1;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: $bc1;
+    margin: .5em;
+    padding: 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: stretch;
+    height: 1.8em;
+
+    &:hover {
+      color: $tc2;
+      background-color: $bc1;
+      left: .1em;
+    }
+
+    &:active {
+      background-color: $bc2;
+      color: $tc1;
+    }
+
+    &.selected {
+      background-color: $bc3;
+      color: $tc1;
+
+      &:hover {
+        background-color: $bc2;
+        color: $tc1;
+      }
+
+      &:active {
+        background: $bc3;
+        color: $tc1;
+      }
+    }
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: small;
+    color: $tc1;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: $bc4;
+    line-height: 50%;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .name {
+    align-self: center;
+  }
+}
