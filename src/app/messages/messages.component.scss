@@ -1,0 +1,38 @@
+/* MessagesComponent's private CSS styles */
+$tc1: var(--tc-1);
+$tc2: var(--tc-2);
+$tc3: var(--tc-3);
+$bc1: var(--bc-1);
+$bc2: var(--bc-2);
+
+.messages {
+  /* Messages Variables Start */
+
+  --tc-1: #A80000;
+  --tc-2: #333;
+  --tc-3: #fff;
+  --bc-1: #fff;
+  --bc-2: #42545C;
+
+  /* Messages Variables Finish */
+
+  h2 {
+    color: $tc1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+
+  .clear {
+    color: #333;
+    background-color: #eee;
+    margin-bottom: 12px;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+
+    &:hover {
+      color: $tc3;
+      background-color: $bc2;
+    }
+  }
+}
