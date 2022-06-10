@@ -2,7 +2,7 @@
   <h2>Top Heroes</h2>
 
   <div class="heroes-menu">
-    <a *ngFor="let hero of heroes">
+    <a *ngFor="let hero of heroes" routerLink="/hero/{{ !hero ? 0 : hero.id }}">
       {{ !hero ? 'No Name' : hero.name }}
     </a>
   </div>
