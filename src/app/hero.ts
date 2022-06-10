@@ -1,4 +1,6 @@
-export interface Hero {
+export interface HeroInterface {
   id: number
   name: string
 }
+
+export type Hero = HeroInterface | null
